@@ -34,6 +34,9 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
+extern void test_printAllNumbers(void);
+extern void test_add_given_1_2_3_4_5_exptect_15(void);
+extern void test_add_given_9_8_7_exptect_24(void);
 extern void test_Exception_given_1_expect_David(void);
 extern void test_Exception_given_minus_1_expect_ERR_OUT_OF_BOUND(void);
 extern void test_Exception_given_4_expect_ERR_OUT_OF_BOUND(void);
@@ -52,9 +55,12 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_Exception.c");
-  RUN_TEST(test_Exception_given_1_expect_David, 30);
-  RUN_TEST(test_Exception_given_minus_1_expect_ERR_OUT_OF_BOUND, 45);
-  RUN_TEST(test_Exception_given_4_expect_ERR_OUT_OF_BOUND, 61);
+  RUN_TEST(test_printAllNumbers, 75);
+  RUN_TEST(test_add_given_1_2_3_4_5_exptect_15, 78);
+  RUN_TEST(test_add_given_9_8_7_exptect_24, 83);
+  RUN_TEST(test_Exception_given_1_expect_David, 88);
+  RUN_TEST(test_Exception_given_minus_1_expect_ERR_OUT_OF_BOUND, 102);
+  RUN_TEST(test_Exception_given_4_expect_ERR_OUT_OF_BOUND, 120);
 
   return (UnityEnd());
 }
