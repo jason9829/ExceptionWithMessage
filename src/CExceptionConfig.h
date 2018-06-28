@@ -1,0 +1,8 @@
+#ifndef _CEXCEPTIONCONFIG_H
+#define _CEXCEPTIONCONFIG_H
+
+// User defined CException configuration
+#define CEXCEPTION_T          char *
+#define CEXCEPTION_NONE       ((CEXCEPTION_T)0X5A5A5A5A)
+
+#endif // _CEXCEPTIONCONFIG_H

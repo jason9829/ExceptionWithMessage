@@ -1,0 +1,24 @@
+---
+:source:
+  :path: test
+  :file: test_Exception.c
+:successes:
+- :test: test_Exception_given_1_expect_David
+  :line: 30
+  :message: ''
+- :test: test_Exception_given_minus_1_expect_ERR_OUT_OF_BOUND
+  :line: 45
+  :message: ''
+- :test: test_Exception_given_4_expect_ERR_OUT_OF_BOUND
+  :line: 61
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 3
+  :failed: 0
+  :ignored: 0
+:stdout:
+- Under test_Exception_given_minus_1_expect_ERR_OUT_OF_BOUND
+- 'error code: ERROR: Out of bond of the array'
